@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="num">
+        <label>Enter a any number : </label>
+        <input type="number" name="num1"><br>
+        <input type="button" value="Get Table" onclick="Table()">
+    </form>
+    <script>
+        function Table()
+        {
+            var n = document.num.num1.value;
+            for(i=1;i<=10;i++)
+            {
+                document.write(n+"*"+i+"="+(n*i)+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
+*
+**
+***
+****
+*****

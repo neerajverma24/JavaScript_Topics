@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Variable</title>
+    </head>
+    <body>
+        <script>
+            var a = 10; // Global Variable
+            function Sum()
+            {
+                var b = 20; 
+                window.c = a + b;//Global Variable
+                document.write("Total a + b : " +c)
+            }
+            Sum();
+            function Sum1()
+            {
+                var b = 20; 
+                var c = a + b;//Global Variable
+                document.write("<br>Total a + b : " +c)
+            }
+            Sum1();
+       </script>
+    </body>
+
+</html>

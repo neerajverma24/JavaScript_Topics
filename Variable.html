@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Variable</title>
+    </head>
+    <Body>
+        <script>
+            var x = 10; // Global Variable
+            function Sum()
+            {
+                var y = 10; // Local Variable
+                window.z = x + y; // Global Variable
+                document.write("Total x +y : "  +z);
+            }
+            Sum();
+            document.write("<br>Total : "+z);
+            var vote = 16;
+            if(vote >= 18)
+            {
+                document.write("<br>Your are eligible.");
+            }
+            else{
+                document.write("<br>Your are not eligible.");
+            }
+
+            var username = "_rknagar_";
+            var password = "12345";
+            if(username == "_rknagar_" && password == "12345")
+            {
+                document.write("<br>Your logged in successfully.");
+            }
+            else{
+                document.write("<br>Invalid Username and password.");
+            }
+        </script>
+    </Body>
+</html>

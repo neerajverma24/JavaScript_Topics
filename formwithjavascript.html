@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body {
+            background: linear-gradient(rgb(159, 159, 230), white);
+            background-repeat: no-repeat;
+        }
+
+        .div1 {
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 25px;
+            width: 40%;
+            margin-left: 30%;
+            height: 350px;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <form name="form1">
+            <table class="table1">
+                <tr>
+                    <td><label>Enter your name : </label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter Password : </label></td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Submit" onclick="data()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function data() {
+            var name = document.form1.name.value;
+            var pass = document.form1.pass.value;
+            alert("Your name : " + name + " and " + "Your Password :" + pass);
+        } 
+    </script>
+</body>
+
+</html>

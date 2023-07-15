@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel & consonant</title>
+</head>
+<body>
+    <script>
+        var a = 't';
+        if((a>='A' && a<='Z') || (a>='a' && a<='z'))
+        {
+            switch(a)
+            {
+                case 'A':
+                case 'a':
+                case 'E':
+                case 'e':
+                case 'I':
+                case 'i':
+                case 'O':
+                case 'o':
+                case 'U':
+                case 'u':
+                document.write("Given Charactor is Vowel.");
+                break;
+                
+                default:
+                {
+                    document.write("Given charactor is Consonant.");
+                }
+            }
+        }
+        else{
+            document.write("Given character is invalid!!!");
+        }
+    </script>
+</body>
+</html>
